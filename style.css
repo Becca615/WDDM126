@@ -1,0 +1,13 @@
+.hero-btn {
+    font-size: 1rem;
+    padding: 12px 24px;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 0 0 #EFEFEF, 4px 4px 0 0 #000;
+    margin-top: 20px;
+    transition-duration: 200ms;
+}
+
+.hero-btn:hover {
+    box-shadow: 3px 3px 0 0 #EFEFEF, 6px 6px 0 0 #000;
+    transform: translate(-2px, 2px);
+}
