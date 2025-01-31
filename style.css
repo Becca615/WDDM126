@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .hero-btn {
     font-size: 1rem;
     padding: 12px 24px;
@@ -10,4 +11,9 @@
 .hero-btn:hover {
     box-shadow: 3px 3px 0 0 #EFEFEF, 6px 6px 0 0 #000;
     transform: translate(-2px, 2px);
+=======
+.colorP{
+    color: coral;
+    font-size: 4rem;
+>>>>>>> origin/substitute
 }
