@@ -1,0 +1,7 @@
+echo "# Merging and Collaborators " >> README.md
+git init
+git add README.md
+git commit -m "third commit"
+git branch -M main
+git remote add origin https://github.com/2010shivanipatel/WDDM126-WEEK-1.git
+git push -u origin main
