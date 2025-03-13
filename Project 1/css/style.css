@@ -19,7 +19,7 @@ h1, h2, h3 {
 .nav-link {
     color: #ffccdd !important;
     border: 2px solid #ffccdd;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .nav-link:hover {
@@ -48,7 +48,7 @@ video, audio {
 
 
 .portfolio-item img {
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 
