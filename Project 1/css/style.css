@@ -6,7 +6,7 @@ body {
 }
 
 header, footer {
-    text-align: center;
+    text-align: left;
     padding: 20px 0;
 }
 
@@ -19,7 +19,7 @@ h1, h2, h3 {
 .nav-link {
     color: #ffccdd !important;
     border: 2px solid #ffccdd;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 .nav-link:hover {
