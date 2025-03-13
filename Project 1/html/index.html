@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI-UX Designer Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #ffccdd;
+            font-family: Helvetica;
+        }
+        header, footer {
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1, h2, h3 {
+            font-weight: bold;
+            color: #ffccdd;
+         }
+        .nav-link {
+            color: #ffccdd !important;
+            border: 2px solid #ffccdd;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            background-color: #ffccdd;
+            color: #000 !important;
+        }
+        .card {
+            background-color: #1b191956; 
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .card:hover {
+            background-color: #ffccdd; 
+            border-color: #ffccdd;
+            transform: scale(1.05);
+        }
+
+        video, audio {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        
+        .modal-dialog {
+            max-width: 550px;
+        }
+
+        .modal-content {
+            background-color: #222123e7; 
+        }
+
+        .modal-title {
+            color: #edb561; 
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Graphic Designer Portfolio</h1>
+        <nav class="nav justify-content-center">
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#services">Services</a>
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        
+        <section id="about" class="text-center">
+            <h2>About</h2>
+            <p>Portfolio showcasing logo design, web design, and illustration.</p>
+        </section>
+
+        
+        <section id="portfolio" class="mt-5">
+            <h2>Portfolio & Works</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-3" data-bs-toggle="modal" data-bs-target="#illustrationModal">Illustrations</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3" data-bs-toggle="modal" data-bs-target="#workModal">Web Designs</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">Logo Designs</div>
+                </div>
+            </div>
+        </section>
+
+       
+        <section id="services" class="mt-5">
+            <h2>Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-3" data-bs-toggle="modal" data-bs-target="#customDesignModal">Custom Design</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">UI/UX Strategy</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">Consultation</div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="testimonials" class="mt-5">
+            <h2>Testimonials</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-3" data-bs-toggle="modal" data-bs-target="#testimonialModal">Submit Your Testimonial</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">"Graphic designs are amazing!" - Client A</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">"A true professional with creative vision." - Client B</div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="contact" class="mt-5">
+            <h2>Contact Me</h2>
+            <address>123 Main Street, Anytown, CA 12345</address>
+            <mobile>+1 (123) 456 789</mobile>
+            <video controls>
+                <source src="video/motion-graphic-video.mp4" type="video/mp4">
+                </video>
+         </section>
+    </div>
+
+   
+    <div class="modal fade" id="testimonialModal" tabindex="-1" aria-labelledby="testimonialModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="testimonialModalLabel">Submit Your Testimonial</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="testimonialForm">
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="nameInput" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="messageInput" class="form-label">Your Testimonial</label>
+                            <textarea class="form-control" id="messageInput" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="customDesignModal" tabindex="-1" aria-labelledby="customDesignModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="customDesignModalLabel">Custom Design Service Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Custom design services are tailored to your needs, whether it’s creating a brand logo or designing a full website layout. I work closely with clients to bring their vision to life with unique, professional designs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="modal fade" id="illustrationModal" tabindex="-1" aria-labelledby="illustrationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="illustrationModalLabel">Illustration Projects</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>Project 1: Digital Portrait</h3> 
+                   <img src="images/project-1.jpg" alt="Digital Portrait" class="img-fluid">
+
+                   
+                    <h3>Project 2: Abstract Art</h3>
+                    <img src="images/project-2.jpg" alt="Abstract Art" class="img-fluid">
+                    
+
+                    <h3>Project 3: Character Design</h3>
+                    <img src="images/project-3.jpg" alt="Character Design" class="img-fluid">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Shivani Patel & Damilola Rebecca</p>
+        <small>This site was built using Bootstrap, HTML, CSS, and JavaScript.</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => card.style.borderColor = '#ffccdd');
+            card.addEventListener('mouseleave', () => card.style.borderColor = '#d3d3d3');
+        });
+
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => alert(`You clicked on ${link.textContent}!`));
+        });
+    </script>
+</body>
+</html>
