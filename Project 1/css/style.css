@@ -24,7 +24,7 @@ h1, h2, h3 {
 
 .nav-link:hover {
     background-color: #ffccdd;
-    color: #fffefe !important;
+    color: #000000 !important;
 }
 
 
@@ -54,7 +54,7 @@ video, audio {
 
 
 .modal-dialog {
-    max-width: 550px;
+    max-width: 500px;
 }
 
 .modal-content {
