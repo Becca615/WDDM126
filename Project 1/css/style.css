@@ -48,13 +48,13 @@ video, audio {
 
 
 .portfolio-item img {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
 
 .modal-dialog {
-    max-width: 500px;
+    max-width: 550px;
 }
 
 .modal-content {
