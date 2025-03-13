@@ -63,6 +63,22 @@
             color: #edb561; 
             font-weight: bolder;
         }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-top: 20px;
+        }
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
@@ -144,10 +160,16 @@
                 <input type="submit" value="Submit">
             </form>
         </section>
-            <video controls>
-                <source src="video/motion-graphic-video.mp4" type="video/mp4">
-            </video>
-         </section>
+
+        <!-- Video Section -->
+        <section id="video" class="mt-5 text-center">
+            <h2> Motion Graphic Video</h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="video/motion-graphic-video.mp4" type="video/mp4">
+                                    </video>
+            </div>
+        </section>
     </div>
 
     <!-- Modals -->
