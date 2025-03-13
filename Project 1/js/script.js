@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
         card.addEventListener('mouseenter', () => card.style.borderColor = '#ffccdd');
-        card.addEventListener('mouseleave', () => card.style.borderColor = '#d3d3d3');
+        card.addEventListener('mouseenter', () => card.style.borderColor = '#d3d3d3');
     });
 
    
