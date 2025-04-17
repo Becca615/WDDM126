@@ -1,0 +1,72 @@
+
+body {
+    background-color: #000;
+    color: #ffccdd;
+    font-family: Helvetica;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    color: #ffccdd;
+}
+
+
+.nav-link {
+    color: #ffccdd !important;
+    border: 2px solid #ffccdd;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #ffccdd;
+    color: #000000 !important;
+}
+
+
+.card {
+    background-color: #1b191956;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #ffccdd;
+    border-color: #ffccdd;
+    transform: scale(1.05);
+}
+
+
+video, audio {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+.modal-dialog {
+    max-width: 550px;
+}
+
+.modal-content {
+    background-color: #222123e7;
+}
+
+.modal-title {
+    color: #edb561;
+    font-weight: bolder;
+}
+
+
+.card:hover {
+    border-color: #ffccdd;
+}
