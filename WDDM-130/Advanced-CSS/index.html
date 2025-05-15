@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDDM 125 Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- Added a gradient background to the body -->
+<body>
+    <div class="grid-container">
+        <!-- Header Section -->
+        <header class="grid-item header">
+            <h1 class="centertext">Hello World! - Oluwadamilola</h1>
+              <!-- Updated header styles to include a larger font size and different color -->
+        </header>
+
+        <!-- Main Content -->
+         <!--
+            This section has been significantly redesigned to improve readability.
+         Changes include:
+         - Updated grid layout
+        - Adjusted font sizes
+        - Added whitespace
+        -->
+        <main class="grid-item main-content">
+            <p>
+                My name is Oluwadamilola, I am a student at Humber College. I am currently studying Web Design and Development. I am a very creative person and I am excited to learn new things. I am always looking for new opportunities to grow and develop my skills.
+            </p>
+
+            <!-- Important Message Section -->
+            <section class="grid-item important-section">
+                <p class="important">I am excited to learn more about web design and development and I am looking forward to working on this project.</p>
+            </section>
+
+            <!-- Highlight Section -->
+            <section class="grid-item highlight-section">
+                <h2>Collaboration</h2>
+                <p>I'm excited to collaborate with my talented classmates and learn from their diverse perspectives. Together, we can create innovative and impactful projects.</p>
+                <img src="colleagues-studying-together-exam.jpg" alt="Students collaborating on a project">
+            </section>
+        </main>
+
+        <!-- Text Section -->
+        <section class="grid-item text-section">
+            <p id="text">This is a paragraph of text that will change styles when the button is clicked.</p>
+        </section>
+
+        <!-- Button Section -->
+        <section class="grid-item button-section">
+            <button id="changeStyleButton">Change Style</button>
+        </section>
+
+        <!-- Image Section -->
+        <section class="grid-item image-section">
+            <figure>
+                <img class="image-fit-width" src="humber.jpg" alt="Humber College">
+                <figcaption>The Barrett Center for Technology and Innovation Building at Humber College North Campus</figcaption>
+            </figure>
+        </section>
+    </div>
+
+    <script>
+        // JavaScript to change styles on button click
+        document.getElementById('changeStyleButton').addEventListener('click', function() {
+            // Change the style of the paragraph with id "text"
+            var textElement = document.getElementById('text');
+            textElement.style.color = 'red'; 
+            textElement.style.fontWeight = 'bold'; 
+            textElement.style.fontSize = '20px'; 
+        });
+    </script>
+</body>
+</html>
+
